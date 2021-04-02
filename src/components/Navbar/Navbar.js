@@ -27,7 +27,7 @@ const Navbar = () => {
               data-target="#navbarNav"
               onClick={clickFun}
             >
-              {click ? <i class="fas fa-times"></i> : <i class="fas fa-bars"></i>}
+              {click ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
               
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">

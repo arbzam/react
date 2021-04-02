@@ -2,29 +2,23 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./HeaderText.css";
 const HeaderText = () => {
-  let url = document.URL;
-  let conbtn;
-  if (url !== "http://localhost:3000/") {
-    conbtn = 
-      <Link to="/contact">
-        <button type="button" className="header-read-btn">
-          contact us
-        </button>
-      </Link>
-  } else {
-    conbtn = [
-      <Link to="/about">
-        <button type="button" className="header-read-btn">
-          read more
-        </button>
-      </Link>,
-      <Link to="/contact">
-        <button type="button" className="header-contact-btn">
-          contact us
-        </button>
-      </Link>
-    ];
-  }
+  // let url = document.URL;
+  // let conbtn;
+  // if (url !== "http://localhost:3000/") {
+  //   conbtn = 
+  //     <Link to="/contact">
+  //       <button type="button" className="header-read-btn">
+  //         contact us
+  //       </button>
+  //     </Link>
+  // } else {
+  //   conbtn = [
+ 
+
+  //     </Link>,
+
+  //   ];
+  // }
   return (
     <>
       <div className="header-text">
@@ -39,7 +33,18 @@ const HeaderText = () => {
             know what is your requirements and how to reach it.
           </p>
         </div>
-        <div className="flex-btn">{conbtn}</div>
+        <div className="flex-btn">
+        <Link to="/about">
+        <button type="button" className="header-read-btn">
+          read more
+        </button>
+        </Link>
+        <Link to="/contact">
+        <button type="button" className="header-contact-btn">
+          contact us
+        </button>
+      </Link>
+        </div>
       </div>
     </>
   );

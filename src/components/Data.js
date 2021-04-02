@@ -16,6 +16,12 @@ const CardData = [
         image: "dubai-onshore.png",
         heading: "SHARJAH FREEZONE",
         list:["Shonsorship" , "Government fees", "Office registration" , "35,000 dhs"]
+    },
+    {
+        id:4,
+        image: "dubai-onshore.png",
+        heading: "SHARJAH FREEZONE",
+        list:["Shonsorship" , "Government fees", "Office registration" , "35,000 dhs"]
     }
 ]
 export default CardData;
